@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-family: Arial, Tahoma;
+  text-transform: capitalize;
+  background-color: #eeeeee
+}
+
+.card {
+  position: relative;
+  width: clamp(360px, 400px, 80%);
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: .4rem;
+  box-shadow: 4px 4px 7px rgb(201 201 201 / 40%);
+}
+
+.card img {
+  display: block;
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card .title {
+  padding: 0 0 1rem;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+.card .title h2 {
+  margin-bottom: .8rem;
+  color: #3b74ba;
+  font-size: 1.8rem;
+  letter-spacing: -2px;
+}
+
+.card .title span {
+  color: #757575;
+  font-size: .8rem
+}
+
+.card .media {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .media .bar {
+  width: 100%;
+  margin: .2rem 0;
+  padding: .8rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: .8rem;
+  background-color: #f6f6f6;
+  transition: all .2s;
+  transition-property: color, background-color
+}
+
+.card .media .bar:hover {
+  background-color: #3b74ba;
+  color: #fff;
+  cursor: pointer;
+}
+
+.rate {
+  display: block;
+  position: absolute;
+  bottom: -1rem;
+  right: 1rem;
+  padding: .5rem;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color:#3b74ba;
+  transition: all .3s;
+}
+
+.rate:hover {
+  transform: scale(1.2);
+  cursor: pointer
+}
