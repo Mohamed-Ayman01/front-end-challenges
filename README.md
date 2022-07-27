@@ -6,7 +6,8 @@
 
 | Challenge | view |
 |---|:-:|
-|  |  |
+| Scroll To Top {CSS Only} | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/Scroll%20To%20Top%20%7BPure%20CSS%7D/) |
+| Card With Transparent Img | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/frontend-card-with-transparent-img/) |
 
 ## Easy Challenges
 
