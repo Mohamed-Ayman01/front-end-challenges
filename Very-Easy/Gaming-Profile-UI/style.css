@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --light-font-clr: #ccc;
+  --dark-font-clr: #000;
+  --gray: #f5f5f5;
+  --dark-blue: #607d8b;
+  --blue:#479df3;
+  --green: #009688;
+  --dark-green: #008000;
+  --red: #e91e63;
+  /* Sizing */
+  --section-padding: 1rem;
+  --section-margin: 1.5rem;
+}
+
+/* Start Components */
+/* Container */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px){
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+
+/* End Components */
+
+body {
+  font-size: 16px;
+  font-family: Roboto , Arial, Tahoma;
+  text-transform: capitalize;
+  background-color: var(--gray);
+}
+
+.about {
+  margin: var(--section-margin);
+  display: flex;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .about {
+    flex-direction: column;
+  }
+}
+
+.about .profile {
+  flex: 1 0 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--section-padding);
+  border-right: 2px solid var(--gray);
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .about .profile {
+    border-left: none;
+    border-bottom: 2px solid var(--gray);
+  }
+}
+
+.about .profile figure img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border: 3px solid var(--gray);
+  border-radius: 50%;
+}
+
+.about .profile figure figcaption {
+  margin: 0.4rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.about .profile .progress .bar {
+  width: 100%;
+  height: 14px;
+  position: relative;
+  margin-bottom: .8rem;
+  border-radius: 6px;
+  background-color: var(--gray);
+  overflow: hidden
+}
+
+.about .profile .progress .bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 14px;
+  background-color: var(--green)
+}
+
+.about .profile .progress p {
+  font-size: .7rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.about .profile .progress p span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--green);
+}
+
+.about .text-info {
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .about .text-info {
+    text-align: center;
+  }
+}
+
+.about .text-info h2 {
+  margin-bottom: 1.4rem;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.about .text-info p {
+  flex-grow: 1;
+}
+
+.about .text-info p,.about .text-info span {
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.about .text-info span {
+  margin: 12px 0;
+  align-self: flex-end;
+}
