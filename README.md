@@ -12,6 +12,12 @@
 | Card With Transparent Img | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/frontend-card-with-transparent-img/) |
 | Gaming Profile UI | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/Gaming-Profile-UI/) |
 | Creative Titles | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/frontend-creative-titles/) |
+| Features Comparison | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/frontend-features-comparison/) |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
 ## Easy Challenges
 
