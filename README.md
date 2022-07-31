@@ -1,6 +1,7 @@
 # FRONT-END_CHALLENGES
 
-> Some Frontend UI Challenges Including {Interfaces , Different Animation ..etc} All Of The Challenges Are Taken From  Elzero Web School Challenges
+> A Repo That Containes Frontend UI Challenges Including {Interfaces , Different Animation...etc}.
+> All Of The Challenges Are From  Elzero Web School Challenges.
 
 ## Very Easy Challenges
 
