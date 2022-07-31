@@ -52,7 +52,23 @@
   }
 }
 
+.heading {
+  width: fit-content;
+  padding: .6rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: var(--dark-blue)
+}
+
+section {
+  margin: var(--section-margin) 0;
+  padding: var(--section-padding);
+  background-color: #fff;
+}
+
 /* End Components */
+
 
 body {
   font-size: 16px;
@@ -62,9 +78,8 @@ body {
 }
 
 .about {
-  margin: var(--section-margin);
   display: flex;
-  background-color: #fff;
+  padding: 0;
 }
 @media (max-width: 767px) {
   .about {
@@ -72,6 +87,7 @@ body {
   }
 }
 
+/* Start About */
 .about .profile {
   flex: 1 0 25%;
   display: flex;
@@ -165,3 +181,100 @@ body {
   margin: 12px 0;
   align-self: flex-end;
 }
+
+/* End About */
+
+/* Start Points-Log */
+.points-log .points p {
+  padding: 1rem 0;
+}
+
+.points-log .points p:not(:last-of-type) {
+  border-bottom: 2px solid var(--gray);
+}
+
+.points-log .points p span {
+  font-weight: bold;
+}
+
+.points-log .points p span:first-of-type {
+  color: var(--green)
+}
+
+.points-log .points p span:nth-of-type(2) {
+  color: var(--red);
+}
+/* End Points-Log */
+
+/* Start Trophies */
+.trophies .img-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 4px;
+  -o-grid-gap: 4px;
+  -moz-grid-gap: 4px;
+  -webkit-grid-gap: 4px;
+}
+
+.trophies .img-box img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--gray);
+}
+
+.trophies .img-box img.locked {
+  opacity: .1;
+}
+/* End Trophies */
+
+/* Start News */
+.news p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.news p span {
+  font-weight: bold;
+}
+
+.news p span:first-of-type{
+  color: var(--red);
+}
+
+.news p span:nth-of-type(2) {
+  color: var(--green);
+}
+/* End News */
+
+/* Start Powers */
+.powers ul {
+  list-style: none;
+}
+
+.powers ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.powers ul li:not(:last-of-type) {
+  border-bottom: 2px solid var(--gray);
+}
+
+.powers ul li p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.powers ul li span {
+  font-weight: bold;
+}
+
+.powers ul li .yes {
+  color: var(--dark-green)
+}
+
+.powers ul li .no {
+  color: var(--red)
+}
+/* End Powers */
