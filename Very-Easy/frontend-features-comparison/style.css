@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --grey: #f6f6f6;
+  --blue: #2196f3;
+  --orange: #f44336;
+  --green: #009688;
+  --pink: #e91e63;
+}
+
+/* Start Container */
+.container {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px){
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+/* End Container */
+
+body {
+  font-size: 16px;
+  font-family: tahoma, arial;
+  text-transform: capitalize;
+  background-color: var(--grey);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.deal {
+  width: fit-content;
+  margin: 1.5rem 0;
+  padding: .6rem;
+  padding-right: 3rem;
+  align-self: flex-end;
+  font-size: 1.3rem;
+  clip-path: polygon(0 0 , 100% 0, 80% 50%, 100% 100%, 0 100%);
+  color: #fff;
+  background-color: var(--blue);
+}
+
+.offers {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.offers > * {
+  flex-basis: 50%;
+  background-color: #fff;
+}
+
+/* custom media */
+@media (max-width: 800px) {
+  .offers {
+    flex-wrap: wrap;
+  }
+
+  .offers > * {
+    flex-basis: 100%;
+  }
+
+}
+
+.offers .basic .head,
+.offers .pro .head {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.offers .basic .head {
+  background-color: var(--orange);
+}
+
+.offers .pro .head {
+  background-color: var(--blue);
+}
+
+.offers .basic ul.feats ,
+.offers .pro ul.feats {
+  list-style:none
+}
+
+.offers .basic ul.feats li,
+.offers .pro ul.feats li {
+  padding: 1rem;
+  display: flex;
+  gap: 10px;
+  transition: background-color .2s ease-in-out
+}
+
+.offers .basic ul.feats li:hover,
+.offers .pro ul.feats li:hover {
+  background-color: #eee;
+  
+}
+
+.offers .basic ul.feats li:not(:last-of-type),
+.offers .pro ul.feats li:not(:last-of-type) {
+  border-bottom: 1px solid var(--grey);
+}
+
+.offers .basic ul.feats li p,
+.offers .pro ul.feats li p  {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.icon-t,
+.icon-f {
+  flex: 0 0 25px;
+  height: 25px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.icon-t {
+  background-color: var(--green);
+}
+
+.icon-t::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 3px;
+  height: 6px;
+  transform: rotateZ(-45deg);
+  background-color: #fff;
+}
+
+.icon-t::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 13px;
+  width: 3px;
+  height: 12px;
+  transform: rotateZ(45deg);
+  background-color: #fff;
+}
+
+.icon-f {
+  background-color: var(--pink);
+}
+
+.icon-f::before {
+  content: "";
+  width: 2px;
+  height: 10px;
+  position: absolute;
+  top: 32%;
+  left: 44%;
+  transform: rotateZ(-45deg);
+  background-color: #fff;
+}
+
+.icon-f::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  position: absolute;
+  top: 32%;
+  left: 44%;
+  transform: rotateZ(45deg);
+  background-color: #fff;
+}
