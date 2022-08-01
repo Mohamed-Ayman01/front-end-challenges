@@ -1,0 +1,157 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* Start Global Values */
+:root {
+  --gray: #f6f6f6;
+  --black: rgb(53, 53, 53);
+  --main-clr: #009688;
+  --pad: 1rem .5rem;
+  --margin: 1rem 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Custom Media */
+@media (max-width: 600px) {
+  .container {
+    width: 320px;
+  }
+}
+
+
+@media (min-width: 768px){
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+/* End Global Values */
+
+/* Start form */
+form {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  background-color: var(--gray);
+}
+
+/* Custom Media */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+}
+
+
+form .col {
+  width: calc(50% - 10px );
+  display: flex;
+  flex-flow: column wrap;
+}
+
+@media (max-width: 600px) {
+  form .col {
+    width: 100%;
+  }
+}
+
+form .col .field {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+form .col .field label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: .5rem;
+}
+
+form .col:first-of-type .field label::after {
+  content: " *";
+  color: red;
+}
+
+
+form .col .field input,
+form .col .field textarea {
+  width: 100%;
+  padding: var(--pad);
+  border-radius: 3px;
+  border: none;
+  border-bottom: 1px solid rgb(151, 151, 151);
+  caret-color: var(--main-clr);
+}
+
+form .col .field textarea {
+  flex: 1 0 160px;
+}
+
+form .col .field input::placeholder {
+  font-weight: 500;
+  color: #a1a1a1
+}
+
+form .col .field input:focus,
+form .col .field textarea:focus {
+  outline: none;
+  border-bottom-color: var(--main-clr);
+}
+
+form input[type=submit] {
+  width: 100%;
+  padding: var(--pad);
+  grid-column: 1/3;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  background-color: var(--main-clr);
+  color: #fff;
+  transition: opacity .2s ease-in-out;
+}
+
+form input[type=submit]:hover {
+  opacity: .8;
+  cursor: pointer;
+}
