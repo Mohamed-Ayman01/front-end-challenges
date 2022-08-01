@@ -15,8 +15,8 @@
 | Features Comparison | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/frontend-features-comparison/) |
 | Frontend Featured Products | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/frontend-featured-products/) |
 | Show Tooltip Onhover | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/show-tooltip-onhover/) |
-| Splitted Frame | ... |
-| Two Columns Form | ... |
+| Splitted Frame | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/splitted-frame/) |
+| Two Columns Form | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/two-columns-form/) |
 | Team Skills And Stats | ... |
 
 ## Easy Challenges
