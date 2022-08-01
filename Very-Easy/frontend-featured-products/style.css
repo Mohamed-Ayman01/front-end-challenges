@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+  text-transform: capitalize;
+}
+
+:root {
+  --main-clr: #2e6270;
+  --side-clr: #e54502;
+  --gray: #ddd;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  border: 1px solid var(--gray);
+}
+
+@media (min-width: 768px){
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+
+.container .head {
+  width: fit-content;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  color: #fff;
+  background-color: var(--main-clr);
+}
+
+.container .box-cont {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container .box-cont .box {
+  position: relative;
+  padding-bottom: 1rem;
+  text-align: center;
+  border: 6px solid var(--gray);
+}
+
+.container .box-cont .box:nth-of-type(2):before {
+  content: "sale!";
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  background-color: var(--side-clr);
+}
+
+.container .box-cont .box img {
+  display: block;
+  width: 240px;
+  height: 260px;
+}
+
+
+.container .box-cont .box p {
+  margin: 1rem 0;
+  color: #6d6c6c;
+}
+
+.container .box-cont .box span {
+  color: var(--main-clr);
+  position: relative;
+}
+
+.container .box-cont .box span.orange {
+  color: var(--side-clr)
+}
+
+.container .box-cont .box span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -70px;
+  width: 60px;
+  height: 3px;
+  transform: translateY(-50%);
+  background-color: var(--gray);
+}
+
+.container .box-cont .box span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  width: 60px;
+  height: 3px;
+  transform: translateY(-50%);
+  background-color: var(--gray);
+}
+
+.container .box-cont .box span del {
+  color: #6d6c6c;
+  font-size: .8rem;
+}
+
+/* display: grid;
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
