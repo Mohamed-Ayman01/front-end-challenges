@@ -17,9 +17,41 @@
 | Show Tooltip Onhover | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/show-tooltip-onhover/) |
 | Splitted Frame | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/splitted-frame/) |
 | Two Columns Form | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/two-columns-form/) |
-| Team Skills And Stats | ... |
+| Team Skills And Stats | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Very-Easy/frontend-team-skills-and-stats-design/) |
 
 ## Easy Challenges
+
+| Challenge | link to view |
+|---|:-:|
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
+| ... | ... |
 
 ## Medium Challenges
 
