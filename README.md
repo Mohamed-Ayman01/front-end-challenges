@@ -23,7 +23,7 @@
 
 | Challenge | link to view |
 |---|:-:|
-| ... | ... |
+| Frame with Picture UI | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Easy/frontend-picture-with-frame/) |
 | ... | ... |
 | ... | ... |
 | ... | ... |
