@@ -1,8 +1,8 @@
 # FRONT-END_CHALLENGES
 
-> A Repo That Containes Frontend UI Challenges Including {Interfaces , Different Animation...etc}.
+#### A Repo That Containes Frontend UI Challenges Such As `Different Animations / Simple UI / Landing Pages`.
 
-> All Of The Challenges Are From  Elzero Web School Challenges.
+#### All Of The Challenges Are From  [Elzero Web School Challenges](https://elzero.org/category/challenges/front-end-challenges/).
 
 ## Very Easy Challenges
 
@@ -24,7 +24,7 @@
 | Challenge | link to view |
 |---|:-:|
 | Frame with Picture UI | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Easy/frontend-picture-with-frame/) |
-| ... | ... |
+| Course Offer Boxes UI | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Easy/course-offer-box/) |
 | ... | ... |
 | ... | ... |
 | ... | ... |
