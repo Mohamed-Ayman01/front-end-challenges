@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --gray-100: #eeeeee;
+  --gray-200: #b3b3b3;
+  --black: #000;
+  --orange: #ff511a;
+}
+
+.bg-white {
+  color: var(--black);
+  background-color: #fff
+}
+
+.bg-black {
+  color: #fff;
+  background-color: var(--black)
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: sans-serif, Verdana, Tahoma;
+  background-color: var(--gray-100);
+}
+
+.container {
+  width: 100%;
+  padding:1.5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: 
+  "osama osama ahmed-sayed shady-nabil" 
+  "mohamed-ibarhim mahmoud-mohamed mahmoud-mohamed shady-nabil" 
+  "mohamed-ibarhim ezz-eldin ezz-eldin shady-nabil" 
+  "mohamed-sayed ibrahim-sayed gamel-sayed eman-sayed" ;
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-areas: 
+    "osama "
+    "ahmed-sayed"
+    "shady-nabil"
+    "mahmoud-mohamed"
+    "mohamed-ibarhim"
+    "mohamed-ibarhim"
+    "ezz-eldin"
+    "mohamed-sayed"
+    "ibrahim-sayed"
+    "gamel-sayed"
+    "eman-sayed"
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .container {
+    grid-template-areas: 
+    "osama osama ahmed-sayed ahmed-sayed" 
+    "mohamed-ibarhim mohamed-ibarhim mahmoud-mohamed mahmoud-mohamed" 
+    "mohamed-ibarhim mohamed-ibarhim ezz-eldin ezz-eldin" 
+    "shady-nabil shady-nabil shady-nabil shady-nabil"
+    "mohamed-sayed mohamed-sayed ibrahim-sayed ibrahim-sayed"
+    "gamel-sayed gamel-sayed eman-sayed eman-sayed" ;
+  }
+}
+
+.container .box {
+  padding: 1rem;
+  line-height: 1.8;
+  border-bottom: 2px solid var(--orange);
+  box-shadow: 0 0 var(--orange);
+  transition: all 300ms ease-in-out;
+  transition-property: transform, box-shadow;
+  position: relative;
+}
+.container .box:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px var(--orange);
+}
+
+.container .box::before {
+  content: '"';
+  position: absolute;
+  bottom: -3.8rem;
+  right: 1rem;
+  font-size: 5rem;
+  transform: rotateZ(15deg);
+  color: var(--gray-200);
+}
+
+.container .box:first-of-type {
+  grid-area: osama;
+}
+
+.container .box:nth-of-type(2) {
+  grid-area: ahmed-sayed;
+}
+
+.container .box:nth-of-type(3) {
+  grid-area: shady-nabil;
+}
+
+.container .box:nth-of-type(4) {
+  grid-area: mohamed-ibarhim;
+}
+
+.container .box:nth-of-type(5) {
+  grid-area: mahmoud-mohamed;
+}
+
+.container .box:nth-of-type(6) {
+  grid-area: ezz-eldin;
+}
+
+.container .box:nth-of-type(7) {
+  grid-area: mohamed-sayed;
+}
+
+.container .box:nth-of-type(8) {
+  grid-area: ibrahim-sayed;
+}
+
+.container .box:nth-of-type(9) {
+  grid-area: gamel-sayed;
+}
+.container .box:last-of-type {
+  grid-area: eman-sayed;
+}
+
+/* .container .box > * {
+  margin: .5rem 0;
+} */
+.container .box .name {
+  text-transform: capitalize;
+}
+
+.container .box .role {
+  color: var(--gray-200);
+  text-transform: capitalize;
+}
+
+.container .box .text-b {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.container .box .text-l {
+
+}
