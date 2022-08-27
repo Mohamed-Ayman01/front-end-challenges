@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Card UI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome Lib -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Start Nav -->
+      <nav>
+        <div class="container">
+          <div class="title">
+            <img src="" alt="" />
+            <div class="text">
+              <h2>someone</h2>
+              <p>front-End developer</p>
+            </div>
+          </div>
+          <div class="accounts">
+            <p>follow me on:</p>
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-behance"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Nav -->
+
+      <!-- Start Main Content -->
+      <section class="main-content">
+
+        <aside>
+          <button class="menu">
+            Menu <i class="fas fa-bars"></i>
+          </button>
+          <ul>
+            <li>
+              <a href="#" class="active"><i class="fas fa-home"></i> home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-user-alt"></i> about</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-graduation-cap"></i> resume</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-cogs"></i> services</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-briefcase"></i> portfolio</a>
+            </li>
+            <li>
+              <a href="#"><i class="far fa-address-book"></i> blog</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-envelope"></i> contact</a>
+            </li>
+          </ul>
+        </aside>
+
+        <section>
+          <div class="cont">
+            <div class="illustration">
+              <img src="work-stress.png" alt="" />
+            </div>
+            <article>
+              <div class="heading">
+                <h2>who i am</h2>
+                <p>
+                  hello, i am someone, working as a front-end developer based in
+                  paris, i have amazing experience in front-end development and
+                  website creation
+                </p>
+              </div>
+  
+              <div class="contact-info">
+                <p>phone : <a href="tel:">+ 113-123-9955</a>.</p>
+                <p>email : <a href="mailto:">me@website.com</a>.</p>
+                <p>address : <a href="#">home number 6, testing st.</a>.</p>
+                <p>freelancer : <a href="#">Available On upwork.</a></p>
+              </div>
+  
+              <button class="more">
+                <i class="fas fa-user-alt"></i> more about me
+              </button>
+  
+            </article>
+          </div>
+        </section>
+
+      </section>
+      <!-- End Main Content -->
+    </div>
+
+    <script defer>
+
+      let menuButton = document.querySelector("aside button.menu");
+
+      menuButton.onclick = function () {
+        if (menuButton.classList.contains("active")) {
+          menuButton.classList.remove("active")
+        } else {
+          menuButton.classList.add("active")
+        }
+      }
+
+    </script>
+  </body>
+</html>
