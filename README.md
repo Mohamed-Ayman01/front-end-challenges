@@ -25,7 +25,7 @@
 |---|:-:|
 | Frame with Picture UI | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Easy/frontend-picture-with-frame/) |
 | Course Offer Boxes UI | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Easy/course-offer-box/) |
-| ... | ... |
+| Company Team With Grid | [view](https://mohamed-ayman01.github.io/FRONT-END_CHALLENGES/Easy/company-team-with-grid/) |
 | ... | ... |
 | ... | ... |
 | ... | ... |
