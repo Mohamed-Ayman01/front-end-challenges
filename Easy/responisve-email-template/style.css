@@ -1,0 +1,74 @@
+:root {
+  --main-clr: #ed4c21;
+  --secon-clr: #f2f8fa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+
+}
+
+header .overlay {
+
+}
+
+header .sign-up {
+
+}
+
+header .sign-up h1 {
+
+}
+
+header .sign-up ul {
+
+}
+
+header .sign-up ul li {
+
+}
+
+header .sign-up button {
+
+}
+
+header .info-box {
+
+}
