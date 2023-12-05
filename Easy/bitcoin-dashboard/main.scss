@@ -1,0 +1,362 @@
+// variables
+
+$blue-200: #0d40c6;
+$blue-100: #1652f0;
+$gray: #f2f6fe;
+$font-clr: #5a6980;
+$green: #10d876;
+
+// mixins
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// global
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+ul {
+  list-style: none
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.clr-red {
+  color: red !important;
+}
+
+.clr-blue {
+  color: $blue-100 !important;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  height: 100vh;
+  font-family: "open sans", sans-serif;
+}
+
+// sects style
+
+aside {
+  background-color: $blue-200;
+  padding: .5rem;
+  .links {
+    margin-top: 5rem;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    a {
+      @include flex-center;
+      width: 100%;
+      padding: 1rem;
+      color: white;
+      transition: background-color .3s;
+      border-radius: 4px;
+
+      @media (max-width: 450px) {
+        & {
+          padding: .7rem;
+        }
+      }
+
+      &:hover, &.active {
+        background-color: $blue-100;
+      }
+    }
+  }
+}
+
+main {
+  flex: 1;
+  overflow: auto;
+
+  > * {
+    padding-left: 3.5rem;
+    padding-right: 1rem;
+  }
+
+  @media (max-width: 930px) {
+    > * {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $gray;
+
+    @media (max-width: 765px) {
+      & {
+        flex-direction: column;
+        padding-bottom: 1rem;
+      }
+    }
+    .img-box {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      @media (max-width: 582px) {
+        flex-direction: column;
+      }
+
+      .balance {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $gray;
+        color: $font-clr;
+        border-radius: 20px;
+        overflow: hidden;
+        height: fit-content;
+        > * {
+          padding: .4rem 1.5rem;
+        }
+        :first-child {
+          background-color: $gray;
+          color: $blue-100;
+        }
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        > i {
+          padding: .7rem;
+          font-size: .7rem;
+          border-radius: 50%;
+          display: block;
+          background-color: $blue-100;
+          color: white;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          color: $font-clr;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .welcome {
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    color: $font-clr;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    span {
+      color: $blue-100;
+    }
+  }
+
+  .data {
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 1rem;
+    
+    @media (max-width: 930px) {
+      & {
+        flex-direction: column;
+      }
+      > * {
+        width: 100% !important;
+      }
+    }
+
+    .exchange-data {
+      width: 40%;
+
+      .options {
+        display: flex;
+        gap: 1.5rem;
+        margin: 0 1rem;
+
+        button {
+          flex: 1;
+          font-size: 1rem;
+          text-transform: uppercase;
+          padding: .4rem;
+
+          &:first-of-type {
+            background-color: $blue-100;
+            color: white;
+            border-radius: 4px;
+          }
+          &:last-of-type {
+            background-color: white;
+            color: $blue-100;
+            border: 2px solid $gray;
+            border-radius: 4px;
+          }
+        }
+      }
+
+      .rows {
+        .row {
+          border-radius: 3px;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          margin-top: 1.6rem;
+          text-transform: capitalize;
+
+          .amount {
+            padding: 1rem;
+            display: flex;
+            color: $font-clr;
+            background-color: $gray;
+
+            > * {
+              flex: 1;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+
+            div {
+              i {
+                font-size: .7rem;
+              }
+            }
+
+            div:last-of-type {
+              padding-left: 1rem;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+      .action {
+        margin-top: 1rem;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: .9rem;
+        
+        .title {
+          text-transform: capitalize;
+          color: $font-clr;
+        }
+
+        button {
+          font-size: 1rem;
+          color: white;
+          border-radius: 4px;
+          text-transform: capitalize;
+          padding: .5rem;
+          font-weight: 500;
+          background: $green;
+          width: 100%;
+        }
+      }
+
+      .note {
+        margin-top: 4rem;
+        color: $font-clr;
+        line-height: 1.6;
+      }
+    }
+
+    .user-pay-info {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      
+      .buyer-seller-data {
+        display: flex;
+        @media (max-width: 490px) {
+          & {
+            flex-direction: column;
+            gap: 1rem;
+          }
+        }
+        > * {
+          flex: 1;
+          display: flex;
+          gap: 1rem;
+
+          .img-box {
+            width: 30px;
+            background-color: $gray;
+
+            img {
+
+            }
+          }
+
+          .text {
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+
+            .name , .email{
+              font-size: .8rem;
+            }
+          }
+        }
+
+        .seller-data {
+          direction: rtl;
+        }
+      }
+
+      .info-boxes {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+
+        .box {
+          color: $font-clr;
+          background-color: $gray;
+          display: flex;
+          gap: 1rem;
+          border-radius: 3px;
+          padding: 1.3rem 1rem;
+
+          word-break: break-all;
+
+          .title {
+            width: 30%;
+            text-transform: capitalize;
+          }
+          .value {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}
