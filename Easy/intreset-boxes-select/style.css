@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
+h2 {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: #5c48f1;
+  background-color: #eeecfd;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.container .box {
+  cursor: pointer;
+  width: 250px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  border-radius: 4px;
+  border: 3px solid #eeecfd;
+  padding: 1rem;
+  position: relative;
+  line-height: 2.3;
+  transition: 0.3s;
+}
+.container .box:has(input:checked) {
+  background-color: #eeecfd;
+  border-color: #5c48f1;
+}
+.container .box:hover input:not(:checked) ~ .checkbox::before {
+  background-color: #a1a1dd;
+}
+.container .box:hover input:not(:checked) ~ .checkbox {
+  border-color: #5c48f1;
+}
+.container .box input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: inherit;
+}
+.container .box input:checked ~ .checkbox::before {
+  background-color: #5c48f1;
+}
+.container .box input:checked ~ .checkbox {
+  border-color: #5c48f1;
+}
+.container .box .checkbox {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  border-radius: 3px;
+  border: 2px solid #a1a1dd;
+  padding: 0.2rem;
+  transition: inherit;
+}
+.container .box .checkbox::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: inherit;
+  background-color: transparent;
+  transition: inherit;
+}
+.container .box i {
+  font-size: 3.5rem;
+  color: #5c48f1;
+}
+.container .box p {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
