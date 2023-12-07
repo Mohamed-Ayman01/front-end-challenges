@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: #eceff1;
+  border: 1px solid #cdcdcd;
+}
+
+input::placeholder {
+  color: #393939;
+  font-size: .9rem;
+  text-transform: capitalize
+}
+
+aside {
+  border-right: 1px solid #ccc;
+  z-index: 1000;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  transition: left .3s;
+  @media (width < 697px) {
+    & {
+      position: absolute;
+      top: 0;
+      left: -100%;
+    }
+    &.active {
+      left: 0;
+      .menu {
+        left: 100%;
+        display: block;
+      }
+    }
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    color: white;
+    background-color: red;
+  }
+  form {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+    input {
+      width: 230px;
+      padding: .75rem 1rem;
+      border-radius: 100px;
+      transition: .3s;
+      &:hover,&:focus {
+        border-color: #00b0ff;
+      }
+    }
+    button {
+      padding: .75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 50%;
+      background-color: #00b0ff;
+      transform: .3s;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+  .contacts {
+    .person {
+      width: 100%;
+      padding: 0 2rem;
+      transform: .3s;
+      &:hover {
+        background-color: #eceff1;
+      }
+      &.active {
+        background-color: #00b0ff;
+        * {
+          color: white !important;
+        }
+      }
+      .cont {
+        width: 100%;
+        padding: .8rem 0;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #cdcdcd;
+        .img-box {
+          margin-right: .75rem;
+          img {
+            background-color: #e0e0e0;
+            border: 1px solid #cdcdcd;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+          }
+        }
+        .txt-box {
+          flex: 1;
+          .row {
+            display: flex;
+            justify-content: space-between;
+            h3 {
+              font-size: 1rem;
+              text-transform: capitalize;
+              font-weight: normal;
+              margin-bottom: .4rem;
+            }
+            .date {
+              color: #00000088;
+              font-size: .9rem;
+            }
+          }
+          p {
+            color: #00000088;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  .person {
+    display: flex;
+    background: #eceff1;
+    color: rgba(0, 0, 0, 0.5333333333);
+    .menu {
+      background-color: #00b0ff;
+      color: white;
+      height: 100%;
+      padding: 0 1rem;
+      display: none;
+      @media (width < 697px) {
+        & {
+          display: block;
+        }
+      }
+    }
+    p {
+      padding: 1rem 2rem;
+      span {
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+  .chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 2rem {
+      top: 0;
+    };
+    flex: 1;
+    .messages {
+      display: flex;
+      flex-direction: column;
+      .date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        color: rgba(0, 0, 0, 0.5333333333);
+        margin-bottom: 2rem;
+        span {
+          flex: 1;
+          height: 1px;
+          background-color: rgba(0, 0, 0, 0.402);
+        }
+  
+      }
+      .msg {
+        margin-bottom: 1rem;
+        width: fit-content;
+        padding: 1rem;
+        border-radius: 4px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          border: 6px solid transparent;
+        }
+        &.left {
+          background-color: #00b0ff;
+          color: white;
+          &::before {
+            right: 100%;
+            border-right-color: #00b0ff;
+          }
+        }
+        &.right {
+          align-self: flex-end;
+          background-color: #eceff1;
+          &::before {
+            left: 100%;
+            border-left-color: #eceff1;
+          }
+        }
+      }
+    }
+    form {
+      display: flex;
+      border-radius: 3px;
+      background-color: #eceff1;
+      padding: 1rem;
+      width: 100%;
+      > * {
+        padding: 0 .5rem;
+      }
+      input {
+        flex: 1;
+        border: none;
+      }
+      button:hover {
+        transition: .3s;
+        background-color: transparent;
+        color:#00b0ff
+      }
+    }
+  }
+}
