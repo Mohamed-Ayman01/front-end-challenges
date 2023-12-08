@@ -28,7 +28,8 @@
 | Company Team With Grid | [view](https://mohamed-ayman01.github.io/front-end-challenges/Easy/company-team-with-grid/) |
 | bitcoin dashboard | [view](https://mohamed-ayman01.github.io/front-end-challenges/Very-Easy/bitcoin-dashboard/) |
 | intreset-boxes-select | [view](https://mohamed-ayman01.github.io/front-end-challenges/Very-Easy/intreset-boxes-select/) |
-| ... | ... |
+| bitcoin dashboard | [view](https://mohamed-ayman01.github.io/front-end-challenges/Very-Easy/bitcoin-dashboard/) |
+| intreset-boxes-select | [view](https://mohamed-ayman01.github.io/front-end-challenges/Very-Easy/chat-messenger/) |
 | ... | ... |
 | ... | ... |
 | ... | ... |
